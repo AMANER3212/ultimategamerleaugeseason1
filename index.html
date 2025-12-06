@@ -1,747 +1,743 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ultimate Gamers League 2025 — Esports Championship (Multi-Mode)</title>
-   <link rel="icon" type="image/png" href="image/logo.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ultimate Gamers League 2025 — Esports Championship (Multi-Mode)</title>
+   <link rel="icon" type="image/png" href="image/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --bg: #07060a;
-      --card: #0f0f16;
-      --accent: #7f00ff;
-      --muted: #bdb7d9;
-      --red-glow: #ff5ca8;
-      --cyan: #00e6ff;
-    }
+  <style>
+    :root {
+      --bg: #07060a;
+      --card: #0f0f16;
+      --accent: #7f00ff;
+      --muted: #bdb7d9;
+      --red-glow: #ff5ca8;
+      --cyan: #00e6ff;
+    }
 
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(180deg, #05040a 0%, #0b0b10 60%);
-      color: #f7f6fb;
-      overflow-x: hidden;
-    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #05040a 0%, #0b0b10 60%);
+      color: #f7f6fb;
+      overflow-x: hidden;
+    }
 
-    .main-wrapper {
-      max-width: 1300px;
-      margin: 0 auto;
-      position: relative;
-    }
+    .main-wrapper {
+      max-width: 1300px;
+      margin: 0 auto;
+      position: relative;
+    }
 
-    /* Hero Section */
-    header.hero {
-      min-height: 76vh;
-      display: grid;
-      grid-template-columns: 1fr 520px;
-      gap: 40px;
-      align-items: center;
-      padding: 48px 6%;
-      background-image:
-        radial-gradient(circle at 10% 20%, rgba(127,0,255,0.08), transparent 10%),
-        radial-gradient(circle at 90% 80%, rgba(0,200,255,0.04), transparent 12%);
-    }
+    /* Hero Section */
+    header.hero {
+      min-height: 76vh;
+      display: grid;
+      grid-template-columns: 1fr 520px;
+      gap: 40px;
+      align-items: center;
+      padding: 48px 6%;
+      background-image:
+        radial-gradient(circle at 10% 20%, rgba(127,0,255,0.08), transparent 10%),
+        radial-gradient(circle at 90% 80%, rgba(0,200,255,0.04), transparent 12%);
+    }
 
-    .hero .left h1 {
-      font-size: 48px;
-      line-height: 1.02;
-      margin: 0 0 12px;
-    }
+    .hero .left h1 {
+      font-size: 48px;
+      line-height: 1.02;
+      margin: 0 0 12px;
+    }
 
-    .glow {
-      background: linear-gradient(90deg, var(--accent), var(--cyan));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
+    .glow {
+      background: linear-gradient(90deg, var(--accent), var(--cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
-    .sub { color: var(--muted); margin-bottom: 20px; }
+    .sub { color: var(--muted); margin-bottom: 20px; }
 
-    .cta { display: flex; gap: 12px; }
+    .cta { display: flex; gap: 12px; }
 
-    /* Info chips and small elements */
-    .chip {
-      display: inline-block;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      font-weight: 600;
-      color: var(--muted);
-    }
+    /* Info chips and small elements */
+    .chip {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      font-weight: 600;
+      color: var(--muted);
+    }
 
-    .small { font-size: 13px; color: var(--muted); }
-    h2 { margin: 0 0 12px; color: #e9defb; font-size: 32px; }
-    .section { padding: 48px 6%; }
+    .small { font-size: 13px; color: var(--muted); }
+    h2 { margin: 0 0 12px; color: #e9defb; font-size: 32px; }
+    .section { padding: 48px 6%; }
 
-    /* Buttons */
-    .btn {
-      background: var(--accent);
-      border: none;
-      padding: 14px 20px;
-      border-radius: 12px;
-      color: #fff;
-      font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 10px 30px rgba(127,0,255,0.14);
-      transition: transform .18s ease, box-shadow .18s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .btn.ghost {
-      background: transparent;
-      border: 1px solid rgba(255,255,255,0.12);
-      box-shadow: none;
-      color: #fff;
-    }
-    .btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 16px 40px rgba(127,0,255,0.22);
-    }
+    /* Buttons */
+    .btn {
+      background: var(--accent);
+      border: none;
+      padding: 14px 20px;
+      border-radius: 12px;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(127,0,255,0.14);
+      transition: transform .18s ease, box-shadow .18s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn.ghost {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: none;
+      color: #fff;
+    }
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(127,0,255,0.22);
+    }
 
-    /* Registration Card */
-    .hero .right {
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-      border: 1px solid rgba(255,255,255,0.08);
-      padding: 22px;
-      border-radius: 14px;
-    }
+    /* Registration Card */
+    .hero .right {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 22px;
+      border-radius: 14px;
+    }
 
-    /* Features Grid */
-    .features {
-      padding: 42px 6%;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: var(--card);
-      padding: 18px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.06);
-    }
+    /* Features Grid */
+    .features {
+      padding: 42px 6%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: var(--card);
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
 
-    .games-grid {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+    .games-grid {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
 
-    /* Game Visuals */
-    .game-visual {
-      width: 100%;
-      height: 120px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-      font-weight: 800;
-      color: white;
-    }
-    .ff-bg { background-color: #c70039; }
-    .bgmi-bg { background-color: #142d4c; }
-    .fc-bg { background-color: #008000; }
+    /* Game Visuals */
+    .game-visual {
+      width: 100%;
+      height: 120px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 800;
+      color: white;
+    }
+    .ff-bg { background-color: #c70039; }
+    .bgmi-bg { background-color: #142d4c; }
+    .fc-bg { background-color: #008000; }
 
-    /* Prize highlights row */
-    .prize-row {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .prize {
-      flex: 1;
-      min-width: 200px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 12px;
-      padding: 12px 14px;
-    }
+    /* Prize highlights row */
+    .prize-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .prize {
+      flex: 1;
+      min-width: 200px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
 
-    /* Breakdown */
-    .breakdown-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
-    .breakdown-card {
-      background: var(--card);
-      padding: 20px;
-      border-radius: 12px;
-      border-left: 4px solid var(--accent);
-    }
-    .breakdown-card h4 {
-      margin-top: 0;
-      color: var(--accent);
-      font-size: 20px;
-    }
-    .fee { color: #00ffc7; font-weight: 700; }
-    .reward { color: #f9d343; font-weight: 700; }
-    .slots { color: #80cfff; font-weight: 700; }
+    /* Breakdown */
+    .breakdown-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .breakdown-card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 4px solid var(--accent);
+    }
+    .breakdown-card h4 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 20px;
+    }
+    .fee { color: #00ffc7; font-weight: 700; }
+    .reward { color: #f9d343; font-weight: 700; }
+    .slots { color: #80cfff; font-weight: 700; }
 
-    /* Form */
-    form#regForm { display: grid; gap: 12px; }
-    input, select, textarea {
-      background: #0a0a10;
-      border: 1px solid rgba(255,255,255,0.10);
-      padding: 12px;
-      border-radius: 10px;
-      color: #fff;
-      width: 100%;
-      outline: none;
-    }
-    input:focus, select:focus, textarea:focus {
-      border-color: rgba(127,0,255,0.6);
-      box-shadow: 0 0 0 4px rgba(127,0,255,0.12);
-    }
-    label { font-size: 13px; color: var(--muted); }
+    /* Form */
+    form#regForm { display: grid; gap: 12px; }
+    input, select, textarea {
+      background: #0a0a10;
+      border: 1px solid rgba(255,255,255,0.10);
+      padding: 12px;
+      border-radius: 10px;
+      color: #fff;
+      width: 100%;
+      outline: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: rgba(127,0,255,0.6);
+      box-shadow: 0 0 0 4px rgba(127,0,255,0.12);
+    }
+    label { font-size: 13px; color: var(--muted); }
 
-    /* Table */
-    .container { padding: 0 6% 48px; }
-    #regTable {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 24px;
-      background: var(--card);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    #regTable th, #regTable td {
-      padding: 12px 10px;
-      border-bottom: 1px dashed rgba(255,255,255,0.1);
-      text-align: left;
-      font-size: 0.95rem;
-    }
-    #regTable th { background: rgba(127,0,255,0.2); }
-    #regTable tbody tr:hover { background: rgba(127,0,255,0.1); }
+    /* Table */
+    .container { padding: 0 6% 48px; }
+    #regTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+      background: var(--card);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    #regTable th, #regTable td {
+      padding: 12px 10px;
+      border-bottom: 1px dashed rgba(255,255,255,0.1);
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    #regTable th { background: rgba(127,0,255,0.2); }
+    #regTable tbody tr:hover { background: rgba(127,0,255,0.1); }
 
-    /* Modal */
-    #customModal {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.7);
-      display: none; justify-content: center; align-items: center;
-      z-index: 1000;
-    }
-    .modal-content {
-      background: var(--card);
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 400px;
-      box-shadow: 0 10px 30px rgba(127,0,255,0.3);
-      text-align: center;
-    }
-    .modal-content h3 { color: var(--accent); margin-top: 0; }
-    .modal-content button { margin-top: 15px; }
+    /* Modal */
+    #customModal {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      display: none; justify-content: center; align-items: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 400px;
+      box-shadow: 0 10px 30px rgba(127,0,255,0.3);
+      text-align: center;
+    }
+    .modal-content h3 { color: var(--accent); margin-top: 0; }
+    .modal-content button { margin-top: 15px; }
 
-    /* Loading Overlay */
-    .loading-overlay {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.8);
-      display: none;
-      justify-content: center; align-items: center;
-      z-index: 2000;
-      color: white; font-size: 1.5rem;
-    }
+    /* Loading Overlay */
+    .loading-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      justify-content: center; align-items: center;
+      z-index: 2000;
+      color: white; font-size: 1.5rem;
+    }
 
-    /* Footer */
-    footer {
-      padding: 28px 6%;
-      border-top: 1px solid rgba(255,255,255,0.06);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
+    /* Footer */
+    footer {
+      padding: 28px 6%;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
-    /* Background Orbs */
-    .orb {
-      position: absolute;
-      pointer-events: none;
-      border-radius: 50%;
-      filter: blur(60px);
-      opacity: 0.18;
-    }
-    .orb.a {
-      width: 360px; height: 360px; right: 2%; top: -40px;
-      background: linear-gradient(90deg,#7f00ff,#00e6ff);
-    }
-    .orb.b {
-      width: 260px; height: 260px; left: 3%; bottom: -60px;
-      background: linear-gradient(90deg,#ff5ca8,#7f00ff);
-    }
+    /* Background Orbs */
+    .orb {
+      position: absolute;
+      pointer-events: none;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.18;
+    }
+    .orb.a {
+      width: 360px; height: 360px; right: 2%; top: -40px;
+      background: linear-gradient(90deg,#7f00ff,#00e6ff);
+    }
+    .orb.b {
+      width: 260px; height: 260px; left: 3%; bottom: -60px;
+      background: linear-gradient(90deg,#ff5ca8,#7f00ff);
+    }
 
-    /* Responsive */
-    @media (max-width: 1024px) {
-      header.hero { grid-template-columns: 1fr 460px; }
-    }
+    /* Responsive */
+    @media (max-width: 1024px) {
+      header.hero { grid-template-columns: 1fr 460px; }
+    }
 
-    @media (max-width: 880px) {
-      header.hero {
-        grid-template-columns: 1fr;
-        padding: 36px 5%;
-        min-height: unset;
-      }
-      .hero .right { order: 2; margin-top: 20px; }
-      .hero .left { order: 1; }
-      .prize { min-width: 160px; }
-    }
-  </style>
+    @media (max-width: 880px) {
+      header.hero {
+        grid-template-columns: 1fr;
+        padding: 36px 5%;
+        min-height: unset;
+      }
+      .hero .right { order: 2; margin-top: 20px; }
+      .hero .left { order: 1; }
+      .prize { min-width: 160px; }
+    }
+  </style>
 </head>
 
 <body onload="initApp()">
-  <div class="main-wrapper">
-    <div class="orb a"></div>
-    <div class="orb b"></div>
+  <div class="main-wrapper">
+    <div class="orb a"></div>
+    <div class="orb b"></div>
 
-    <!-- Modal -->
-    <div id="customModal">
-      <div class="modal-content">
-        <h3 id="modalTitle"></h3>
-        <p id="modalMessage"></p>
-        <button class="btn" onclick="closeModal()">OK</button>
-      </div>
-    </div>
+        <div id="customModal">
+      <div class="modal-content">
+        <h3 id="modalTitle"></h3>
+        <p id="modalMessage"></p>
+        <button class="btn" onclick="closeModal()">OK</button>
+      </div>
+    </div>
 
-    <!-- Loading Overlay -->
-    <div id="loadingOverlay" class="loading-overlay">
-      Saving registration... Please wait.
-    </div>
+        <div id="loadingOverlay" class="loading-overlay">
+      Saving registration... Please wait.
+    </div>
 
-    <!-- Hero -->
-    <header class="hero">
-      <div class="left">
-        <p class="sub" style="font-size:18px;">Organized by <img src="image/neelkanth.png" alt="UGL Logo" style="height:100px;vertical-align:middle;margin-right:10px;"> <strong>NEELKANTH EVENTS</strong> <img src="image/neelkanth.png" alt="UGL Logo" style="height:100px;vertical-align:middle;margin-right:10px;"> | The Esports Revolution</p>
-        <h1>
-  <img src="image/logo.png" alt="UGL Logo" style="height:180px;vertical-align:middle;margin-right:10px;">
-  <span class="glow">Ultimate Gamers League</span> 2025
+        <header class="hero">
+      <div class="left">
+        <p class="sub" style="font-size:18px;">Organized by <img src="image/neelkanth.png" alt="UGL Logo" style="height:100px;vertical-align:middle;margin-right:10px;"> <strong>NEELKANTH EVENTS</strong> <img src="image/neelkanth.png" alt="UGL Logo" style="height:100px;vertical-align:middle;margin-right:10px;"> | The Esports Revolution</p>
+        <h1>
+  <img src="image/logo.png" alt="UGL Logo" style="height:180px;vertical-align:middle;margin-right:10px;">
+  <span class="glow">Ultimate Gamers League</span> 2025
 </h1>
 
-        <p class="sub">Join the ultimate esports championship and showcase your gaming skills across three major mobile titles, available in both <strong>Online</strong> and <strong>Offline</strong> modes.</p>
+        <p class="sub">Join the ultimate esports championship and showcase your gaming skills across three major mobile titles, available in both <strong>Online</strong> and <strong>Offline</strong> modes.</p>
 
-        <div class="prize-row" style="margin-bottom:20px;">
-          <div class="prize">
-            <h3 style="margin:0;font-size:24px;color:#fff;">₹18,000+</h3>
-            <p class="small" style="margin:0;">Total Prize Pool</p>
-          </div>
-          <div class="prize">
-            <h3 style="margin:0;font-size:24px;color:#fff;">9 Categories</h3>
-            <p class="small" style="margin:0;">Solo, Duo, & Squad</p>
-          </div>
-          <div class="prize">
-            <h3 style="margin:0;font-size:24px;color:#fff;">3 Games</h3>
-            <p class="small" style="margin:0;">FF, BGMI, FC Mobile</p>
-          </div>
-          <div class="prize">
-            <h3 style="margin:0;font-size:24px;color:var(--cyan);">Multi-Mode</h3>
-            <p class="small" style="margin:0;">Online & Offline</p>
-          </div>
-        </div>
+        <div class="prize-row" style="margin-bottom:20px;">
+          <div class="prize">
+            <h3 style="margin:0;font-size:24px;color:#fff;">₹18,000+</h3>
+            <p class="small" style="margin:0;">Total Prize Pool</p>
+          </div>
+          <div class="prize">
+            <h3 style="margin:0;font-size:24px;color:#fff;">9 Categories</h3>
+            <p class="small" style="margin:0;">Solo, Duo, & Squad</p>
+          </div>
+          <div class="prize">
+            <h3 style="margin:0;font-size:24px;color:#fff;">3 Games</h3>
+            <p class="small" style="margin:0;">FF, BGMI, FC Mobile</p>
+          </div>
+          <div class="prize">
+            <h3 style="margin:0;font-size:24px;color:var(--cyan);">Multi-Mode</h3>
+            <p class="small" style="margin:0;">Online & Offline</p>
+          </div>
+        </div>
 
-        <div class="cta">
-          <a href="#rules" class="btn ghost">Official Rules</a>
-          <a href="#registration-form" class="btn">Register Now</a>
-        </div>
-      </div>
+        <div class="cta">
+          <a href="#rules" class="btn ghost">Official Rules</a>
+          <a href="#registration-form" class="btn">Register Now</a>
+        </div>
+      </div>
 
-      <div class="right" id="registration-form">
-        <h3 style="margin-top:0;font-size:22px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">Quick Registration via WhatsApp</h3>
-        <p class="small" style="margin-bottom:15px;color:rgba(255,255,255,0.7);">
-          <span id="modeChip" class="chip" style="background:rgba(0,230,255,0.12);color:var(--cyan);font-size:11px;margin-right:8px;">MODE: ONLINE</span>
-          Fill out the form below. When you click <strong>Register</strong>, a pre-filled WhatsApp message containing your details and assigned <strong>Slot IDs</strong> will open for you to send to complete registration and payment.
-        </p>
+      <div class="right" id="registration-form">
+        <h3 style="margin-top:0;font-size:22px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">Quick Registration via WhatsApp</h3>
+        <p class="small" style="margin-bottom:15px;color:rgba(255,255,255,0.7);">
+          <span id="modeChip" class="chip" style="background:rgba(0,230,255,0.12);color:var(--cyan);font-size:11px;margin-right:8px;">MODE: ONLINE</span>
+          Fill out the form below. When you click <strong>Register</strong>, a pre-filled WhatsApp message containing your details and assigned <strong>Slot IDs</strong> will open for you to send to complete registration and payment.
+        </p>
 
-        <form id="regForm">
+        <form id="regForm">
+          <div>
+            <label for="teamName">Team / Player Name *</label>
+            <input type="text" id="teamName" required placeholder="Ex: Titans Gaming / ShadowHunter" />
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div>
+              <label for="modeSelect">Tournament Mode *</label>
+              <select id="modeSelect" required onchange="updateModeChip(this.value)">
+                <option value="Online">Online (Remote Play)</option>
+                <option value="Offline">Offline (On-Site/LAN Play)</option>
+              </select>
+            </div>
+            <div>
+              <label for="gameSelect">Game *</label>
+              <select id="gameSelect" required>
+                <option value="Free Fire">Free Fire</option>
+                <option value="BGMI">BGMI</option>
+                <option value="FC Mobile">FC Mobile</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="categorySelect">Category *</label>
+            <select id="categorySelect" required>
+              <option value="Solo">Solo (1 Player)</option>
+              <option value="Duo">Duo (2 Players)</option>
+              <option value="Squad">Squad (4 Players)</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="phone">WhatsApp Contact Number *</label>
+            <input type="tel" id="phone" required placeholder="91XXXXXXXXXX (No spaces/dashes)" />
+          </div>
+          
           <div>
-            <label for="teamName">Team / Player Name *</label>
-            <input type="text" id="teamName" required placeholder="Ex: Titans Gaming / ShadowHunter" />
-          </div>
+            <label for="referral">Referral Code / Name (Optional)</label>
+            <input type="text" id="referral" placeholder="Ex: PARTNER123 / PlayerX" />
+          </div>
+                    <div>
+            <label for="members">Player Names (Comma Separated)</label>
+            <textarea id="members" rows="2" placeholder="Ex: Player1, Player2, Player3, Player4"></textarea>
+            <p class="small" style="margin-top:4px;">List all members including the Team/Player Name listed above.</p>
+          </div>
 
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-            <div>
-              <label for="modeSelect">Tournament Mode *</label>
-              <select id="modeSelect" required onchange="updateModeChip(this.value)">
-                <option value="Online">Online (Remote Play)</option>
-                <option value="Offline">Offline (On-Site/LAN Play)</option>
-              </select>
-            </div>
-            <div>
-              <label for="gameSelect">Game *</label>
-              <select id="gameSelect" required>
-                <option value="Free Fire">Free Fire</option>
-                <option value="BGMI">BGMI</option>
-                <option value="FC Mobile">FC Mobile</option>
-              </select>
-            </div>
-          </div>
+          <p id="regMsg" class="small" style="color:var(--accent);text-align:center;font-weight:600;"></p>
 
-          <div>
-            <label for="categorySelect">Category *</label>
-            <select id="categorySelect" required>
-              <option value="Solo">Solo (1 Player)</option>
-              <option value="Duo">Duo (2 Players)</option>
-              <option value="Squad">Squad (4 Players)</option>
-            </select>
-          </div>
+          <button type="submit" class="btn" style="margin-top:10px;">Register & Send via WhatsApp</button>
+        </form>
+      </div>
+    </header>
 
-          <div>
-            <label for="phone">WhatsApp Contact Number *</label>
-            <input type="tel" id="phone" required placeholder="91XXXXXXXXXX (No spaces/dashes)" />
-          </div>
+        <section class="section" id="games">
+      <h2 style="text-align:center;">The <span class="glow">Games</span> & Categories</h2>
+      <p class="lead" style="text-align:center;margin-bottom:30px;">Choose your field of battle from the top mobile esports titles, across two modes.</p>
 
-          <div>
-            <label for="members">Player Names (Comma Separated)</label>
-            <textarea id="members" rows="2" placeholder="Ex: Player1, Player2, Player3, Player4"></textarea>
-            <p class="small" style="margin-top:4px;">List all members including the Team/Player Name listed above.</p>
-          </div>
+      <div class="features">
+        <div class="card">
+          <div class="game-visual ff-bg">FF 🔥</div>
+          <h3 style="margin-top:0;color:#f7f6fb;">Free Fire</h3>
+          <div class="games-grid">
+            <span class="chip">Solo</span>
+            <span class="chip">Duo</span>
+            <span class="chip">Squad</span>
+          </div>
+          <p class="small" style="margin-top:10px;">Available for both Online (Remote) and Offline (LAN) modes.</p>
+        </div>
 
-          <p id="regMsg" class="small" style="color:var(--accent);text-align:center;font-weight:600;"></p>
+        <div class="card">
+          <div class="game-visual bgmi-bg">BGMI 🛡️</div>
+          <h3 style="margin-top:0;color:#f7f6fb;">BGMI</h3>
+          <div class="games-grid">
+            <span class="chip">Solo</span>
+            <span class="chip">Duo</span>
+            <span class="chip">Squad</span>
+          </div>
+          <p class="small" style="margin-top:10px;">India’s premier mobile title. Dominate the zones online or on-site.</p>
+        </div>
 
-          <button type="submit" class="btn" style="margin-top:10px;">Register & Send via WhatsApp</button>
-        </form>
-      </div>
-    </header>
+        <div class="card">
+          <div class="game-visual fc-bg">FC ⚽</div>
+          <h3 style="margin-top:0;color:#f7f6fb;">FC Mobile</h3>
+          <div class="games-grid">
+            <span class="chip">Solo</span>
+          </div>
+          <p class="small" style="margin-top:10px;">Available in Solo format. Show off your skills on the digital pitch.</p>
+        </div>
 
-    <!-- Games -->
-    <section class="section" id="games">
-      <h2 style="text-align:center;">The <span class="glow">Games</span> & Categories</h2>
-      <p class="lead" style="text-align:center;margin-bottom:30px;">Choose your field of battle from the top mobile esports titles, across two modes.</p>
+        <div class="card" style="border:1px solid var(--accent);">
+          <h3 style="margin-top:0;color:var(--accent);">Registration Structure</h3>
+          <p class="small">View the detailed breakdown of entry fees, prize money, and available slots per category and mode.</p>
+          <a href="#fees-prizes" class="btn" style="width:100%;margin-top:10px;padding:10px;">View Fees & Slots</a>
+        </div>
+      </div>
+    </section>
 
-      <div class="features">
-        <div class="card">
-          <div class="game-visual ff-bg">FF 🔥</div>
-          <h3 style="margin-top:0;color:#f7f6fb;">Free Fire</h3>
-          <div class="games-grid">
-            <span class="chip">Solo</span>
-            <span class="chip">Duo</span>
-            <span class="chip">Squad</span>
-          </div>
-          <p class="small" style="margin-top:10px;">Available for both Online (Remote) and Offline (LAN) modes.</p>
-        </div>
+        <section class="section" id="organizer-info">
+      <h2 style="text-align:center;"><span class="glow">Organized by</span> Neelkanth Events</h2>
+      <p class="lead" style="text-align:center;">Ultimate Gamers League 2025 is proudly presented by Neelkanth Events.</p>
+      <div class="breakdown-card" style="max-width:800px; margin: 0 auto; border-left: 4px solid var(--red-glow);">
+        <p class="small" style="color:#e9defb; text-align:center; line-height:1.6;">
+          Neelkanth Events ensures the <strong>Ultimate Gamers League 2025</strong> is a seamless, world-class esports experience, managing logistics for both <strong>Online (Remote)</strong> matches and the <strong>Offline (On-Site/LAN)</strong> finals.
+        </p>
+      </div>
+    </section>
 
-        <div class="card">
-          <div class="game-visual bgmi-bg">BGMI 🛡️</div>
-          <h3 style="margin-top:0;color:#f7f6fb;">BGMI</h3>
-          <div class="games-grid">
-            <span class="chip">Solo</span>
-            <span class="chip">Duo</span>
-            <span class="chip">Squad</span>
-          </div>
-          <p class="small" style="margin-top:10px;">India’s premier mobile title. Dominate the zones online or on-site.</p>
-        </div>
+        <section class="section" id="fees-prizes">
+      <h2 style="text-align:center;">Entry Fees & <span class="glow">Slot Capacity</span></h2>
+      <p class="lead" style="text-align:center;">View the entry fee, guaranteed prize distribution, and maximum slot capacity for each category, applied across both Online and Offline modes.</p>
 
-        <div class="card">
-          <div class="game-visual fc-bg">FC ⚽</div>
-          <h3 style="margin-top:0;color:#f7f6fb;">FC Mobile</h3>
-          <div class="games-grid">
-            <span class="chip">Solo</span>
-          </div>
-          <p class="small" style="margin-top:10px;">Available in Solo format. Show off your skills on the digital pitch.</p>
-        </div>
+      <div class="breakdown-grid">
+        <div class="breakdown-card">
+          <h4>Solo Categories</h4>
+          <p>Entry Fee: <span class="fee">₹50</span></p>
+          <p>Guaranteed Prize: <span class="reward">₹1,000</span></p>
+          <p>Slots Available (Max per Mode): <span class="slots">100</span></p>
+          <p class="small">Applicable to FF, BGMI, and FC Mobile Solo. (100 Online + 100 Offline)</p>
+        </div>
+        <div class="breakdown-card">
+          <h4>Duo Categories</h4>
+          <p>Entry Fee: <span class="fee">₹100</span></p>
+          <p>Guaranteed Prize: <span class="reward">₹3,000</span></p>
+          <p>Slots Available (Max per Mode): <span class="slots">100</span></p>
+          <p class="small">Applicable to Free Fire and BGMI Duo formats. (100 Online + 100 Offline)</p>
+        </div>
+        <div class="breakdown-card">
+          <h4>Squad Categories</h4>
+          <p>Entry Fee: <span class="fee">₹200</span></p>
+          <p>Guaranteed Prize: <span class="reward">₹4,000</span></p>
+          <p>Slots Available (Max per Mode): <span class="slots">100</span></p>
+          <p class="small">Applicable to Free Fire and BGMI Squad formats. (100 Online + 100 Offline)</p>
+        </div>
+      </div>
+    </section>
 
-        <div class="card" style="border:1px solid var(--accent);">
-          <h3 style="margin-top:0;color:var(--accent);">Registration Structure</h3>
-          <p class="small">View the detailed breakdown of entry fees, prize money, and available slots per category and mode.</p>
-          <a href="#fees-prizes" class="btn" style="width:100%;margin-top:10px;padding:10px;">View Fees & Slots</a>
-        </div>
-      </div>
-    </section>
+        <div class="container">
+      <h2>Live Registrations (Local Data)</h2>
+      <p class="small" id="userIdDisplay" style="color: var(--muted); margin-bottom: 10px;">User ID: Using Local Storage for data persistence.</p>
+      <div id="liveTableStatus" class="small" style="color:var(--cyan); margin-bottom: 10px;">Loading live registrations from Local Storage...</div>
+      <table id="regTable">
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>Mode</th>
+            <th>Game</th>
+            <th>Category</th>
+            <th>Member</th>
+            <th>Slot</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
 
-    <!-- Organizer -->
-    <section class="section" id="organizer-info">
-      <h2 style="text-align:center;"><span class="glow">Organized by</span> Neelkanth Events</h2>
-      <p class="lead" style="text-align:center;">Ultimate Gamers League 2025 is proudly presented by Neelkanth Events.</p>
-      <div class="breakdown-card" style="max-width:800px; margin: 0 auto; border-left: 4px solid var(--red-glow);">
-        <p class="small" style="color:#e9defb; text-align:center; line-height:1.6;">
-          Neelkanth Events ensures the <strong>Ultimate Gamers League 2025</strong> is a seamless, world-class esports experience, managing logistics for both <strong>Online (Remote)</strong> matches and the <strong>Offline (On-Site/LAN)</strong> finals.
-        </p>
-      </div>
-    </section>
+        <section class="section" id="rules">
+      <h2 style="text-align:center;">Official <span class="glow">Rules & Regulations</span></h2>
+      <p class="lead" style="text-align:center;margin-bottom:30px;">Mandatory guidelines for fair play, player conduct, and event integrity.</p>
 
-    <!-- Fees and slots -->
-    <section class="section" id="fees-prizes">
-      <h2 style="text-align:center;">Entry Fees & <span class="glow">Slot Capacity</span></h2>
-      <p class="lead" style="text-align:center;">View the entry fee, guaranteed prize distribution, and maximum slot capacity for each category, applied across both Online and Offline modes.</p>
+      <div class="rules-grid" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:18px;">
+        <div class="card">
+          <h4 style="color:var(--accent);margin-top:0;">Fair Play & Conduct</h4>
+          <ul class="small" style="list-style:disc;margin-left:20px;line-height:1.8;">
+            <li><strong>Zero Tolerance for Cheating:</strong> Use of hacks, scripts, third-party software, or any unauthorized modification is strictly prohibited and results in immediate permanent ban.</li>
+            <li><strong>Account Sharing:</strong> Sharing accounts or playing on someone's account is not allowed.</li>
+            <li><strong>Toxic Behavior:</strong> Any form of verbal abuse, harassment, or offensive communication toward opponents, teammates, or administrators will lead to disqualification.</li>
+            <li><strong>Referees' Decision:</strong> All decisions made by the tournament administrators and referees are final and binding.</li>
+          </ul>
+        </div>
 
-      <div class="breakdown-grid">
-        <div class="breakdown-card">
-          <h4>Solo Categories</h4>
-          <p>Entry Fee: <span class="fee">₹50</span></p>
-          <p>Guaranteed Prize: <span class="reward">₹1,000</span></p>
-          <p>Slots Available (Max per Mode): <span class="slots">100</span></p>
-          <p class="small">Applicable to FF, BGMI, and FC Mobile Solo. (100 Online + 100 Offline)</p>
-        </div>
-        <div class="breakdown-card">
-          <h4>Duo Categories</h4>
-          <p>Entry Fee: <span class="fee">₹100</span></p>
-          <p>Guaranteed Prize: <span class="reward">₹3,000</span></p>
-          <p>Slots Available (Max per Mode): <span class="slots">100</span></p>
-          <p class="small">Applicable to Free Fire and BGMI Duo formats. (100 Online + 100 Offline)</p>
-        </div>
-        <div class="breakdown-card">
-          <h4>Squad Categories</h4>
-          <p>Entry Fee: <span class="fee">₹200</span></p>
-          <p>Guaranteed Prize: <span class="reward">₹4,000</span></p>
-          <p>Slots Available (Max per Mode): <span class="slots">100</span></p>
-          <p class="small">Applicable to Free Fire and BGMI Squad formats. (100 Online + 100 Offline)</p>
-        </div>
-      </div>
-    </section>
+        <div class="card">
+          <h4 style="color:var(--accent);margin-top:0;">Eligibility & Registration</h4>
+          <ul class="small" style="list-style:disc;margin-left:20px;line-height:1.8;">
+            <li><strong>Eligibility:</strong> The tournament is open to all students. ID verification is spot-checked by admins.</li>
+            <li><strong>Registration & Fees:</strong> Registration is confirmed only upon successful submission of the form details and payment of the specified entry fee (₹50/₹100/₹200).</li>
+            <li><strong>Mode:</strong> Select between <strong>Online (Remote)</strong> and <strong>Offline (On-Site/LAN)</strong> when registering. Detailed instructions for your chosen mode will be provided after payment confirmation.</li>
+            <li><strong>Lateness:</strong> Teams/Players must be ready at the designated match time. Late arrival (beyond 10 minutes) may result in automatic forfeit.</li>
+            <li><strong>Disclaimers:</strong> The organizers reserve the right to change the schedule, rules, or prizes if necessary, with prior notice.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="partners">
+  <h2 style="text-align:center;">Become a <span class="glow">Partner</span></h2>
+  <p class="lead" style="text-align:center;margin-bottom:30px;">
+    Join hands with <strong>Ultimate Gamers League 2025</strong> and earn <span class="reward">10% commission</span> 
+    on every successful registration you bring in. Help us grow the esports revolution together!
+  </p>
 
-    <!-- Live registrations -->
-    <div class="container">
-      <h2>Live Registrations (Local Data)</h2>
-      <p class="small" id="userIdDisplay" style="color: var(--muted); margin-bottom: 10px;">User ID: Using Local Storage for data persistence.</p>
-      <div id="liveTableStatus" class="small" style="color:var(--cyan); margin-bottom: 10px;">Loading live registrations from Local Storage...</div>
-      <table id="regTable">
-        <thead>
-          <tr>
-            <th>Team</th>
-            <th>Mode</th>
-            <th>Game</th>
-            <th>Category</th>
-            <th>Member</th>
-            <th>Slot</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+  <div class="features">
+    <div class="card">
+      <h3 style="margin-top:0;color:#f7f6fb;">💡 Why Partner With Us?</h3>
+      <ul class="small" style="list-style:disc;margin-left:20px;line-height:1.8;">
+        <li>Earn <strong>10% commission</strong> per registration.</li>
+        <li>Be part of India’s fastest-growing esports community.</li>
+        <li>Exclusive partner recognition and shout-outs.</li>
+        <li>Access to insider updates and early event info.</li>
+      </ul>
+    </div>
 
-    <!-- Rules -->
-    <section class="section" id="rules">
-      <h2 style="text-align:center;">Official <span class="glow">Rules & Regulations</span></h2>
-      <p class="lead" style="text-align:center;margin-bottom:30px;">Mandatory guidelines for fair play, player conduct, and event integrity.</p>
+    <div class="card">
+      <h3 style="margin-top:0;color:#f7f6fb;">📈 How It Works</h3>
+      <p class="small">It’s simple:</p>
+      <ol class="small" style="margin-left:20px;line-height:1.8;">
+        <li>Register as a partner using the form below.</li>
+        <li>Share your unique referral link or code.</li>
+        <li>Earn <span class="reward">10% commission</span> for each confirmed registration.</li>
+      </ol>
+    </div>
 
-      <div class="rules-grid" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:18px;">
-        <div class="card">
-          <h4 style="color:var(--accent);margin-top:0;">Fair Play & Conduct</h4>
-          <ul class="small" style="list-style:disc;margin-left:20px;line-height:1.8;">
-            <li><strong>Zero Tolerance for Cheating:</strong> Use of hacks, scripts, third-party software, or any unauthorized modification is strictly prohibited and results in immediate permanent ban.</li>
-            <li><strong>Account Sharing:</strong> Sharing accounts or playing on someone's account is not allowed.</li>
-            <li><strong>Toxic Behavior:</strong> Any form of verbal abuse, harassment, or offensive communication toward opponents, teammates, or administrators will lead to disqualification.</li>
-            <li><strong>Referees' Decision:</strong> All decisions made by the tournament administrators and referees are final and binding.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h4 style="color:var(--accent);margin-top:0;">Eligibility & Registration</h4>
-          <ul class="small" style="list-style:disc;margin-left:20px;line-height:1.8;">
-            <li><strong>Eligibility:</strong> The tournament is open to all students. ID verification is spot-checked by admins.</li>
-            <li><strong>Registration & Fees:</strong> Registration is confirmed only upon successful submission of the form details and payment of the specified entry fee (₹50/₹100/₹200).</li>
-            <li><strong>Mode:</strong> Select between <strong>Online (Remote)</strong> and <strong>Offline (On-Site/LAN)</strong> when registering. Detailed instructions for your chosen mode will be provided after payment confirmation.</li>
-            <li><strong>Lateness:</strong> Teams/Players must be ready at the designated match time. Late arrival (beyond 10 minutes) may result in automatic forfeit.</li>
-            <li><strong>Disclaimers:</strong> The organizers reserve the right to change the schedule, rules, or prizes if necessary, with prior notice.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="section" id="partners">
-  <h2 style="text-align:center;">Become a <span class="glow">Partner</span></h2>
-  <p class="lead" style="text-align:center;margin-bottom:30px;">
-    Join hands with <strong>Ultimate Gamers League 2025</strong> and earn <span class="reward">10% commission</span> 
-    on every successful registration you bring in. Help us grow the esports revolution together!
-  </p>
-
-  <div class="features">
-    <div class="card">
-      <h3 style="margin-top:0;color:#f7f6fb;">💡 Why Partner With Us?</h3>
-      <ul class="small" style="list-style:disc;margin-left:20px;line-height:1.8;">
-        <li>Earn <strong>10% commission</strong> per registration.</li>
-        <li>Be part of India’s fastest-growing esports community.</li>
-        <li>Exclusive partner recognition and shout-outs.</li>
-        <li>Access to insider updates and early event info.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3 style="margin-top:0;color:#f7f6fb;">📈 How It Works</h3>
-      <p class="small">It’s simple:</p>
-      <ol class="small" style="margin-left:20px;line-height:1.8;">
-        <li>Register as a partner using the form below.</li>
-        <li>Share your unique referral link or code.</li>
-        <li>Earn <span class="reward">10% commission</span> for each confirmed registration.</li>
-      </ol>
-    </div>
-
-    <div class="card">
-      <h3 style="margin-top:0;color:#f7f6fb;">📝 Partner Registration</h3>
-      <form id="partnerForm" style="display:grid;gap:12px;">
-        <div>
-          <label for="partnerName">Name / Organization *</label>
-          <input type="text" id="partnerName" required placeholder="Ex: Esports Hub / John Doe">
-        </div>
-        <div>
-          <label for="partnerPhone">WhatsApp Contact *</label>
-          <input type="tel" id="partnerPhone" required placeholder="91XXXXXXXXXX">
-        </div>
-        <div>
-          <label for="partnerEmail">Email *</label>
-          <input type="email" id="partnerEmail" required placeholder="your@email.com">
-        </div>
-        <button type="submit" class="btn">Register as Partner</button>
-      </form>
-      <p id="partnerMsg" class="small" style="color:var(--accent);text-align:center;font-weight:600;margin-top:10px;"></p>
-    </div>
-  </div>
+    <div class="card">
+      <h3 style="margin-top:0;color:#f7f6fb;">📝 Partner Registration</h3>
+      <form id="partnerForm" style="display:grid;gap:12px;">
+        <div>
+          <label for="partnerName">Name / Organization *</label>
+          <input type="text" id="partnerName" required placeholder="Ex: Esports Hub / John Doe">
+        </div>
+        <div>
+          <label for="partnerPhone">WhatsApp Contact *</label>
+          <input type="tel" id="partnerPhone" required placeholder="91XXXXXXXXXX">
+        </div>
+        <div>
+          <label for="partnerEmail">Email *</label>
+          <input type="email" id="partnerEmail" required placeholder="your@email.com">
+        </div>
+        <button type="submit" class="btn">Register as Partner</button>
+      </form>
+      <p id="partnerMsg" class="small" style="color:var(--accent);text-align:center;font-weight:600;margin-top:10px;"></p>
+    </div>
+  </div>
 </section>
 
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="chip">Ultimate Gamers League 2025 | The Esports Revolution</div>
-      <p class="small">
-        Contact:
-        <a href="tel:+917559366120" style="color:var(--muted);text-decoration:none;">+91 7559366120</a> |
-        <a href="tel:+917756997453" style="color:var(--muted);text-decoration:none;">+91 7756997453</a> |
-        <a href="tel:+918483938388" style="color:var(--muted);text-decoration:none;">+91 8483938388</a>
-      </p>
-    </footer>
-  </div>
+        <footer class="footer">
+      <div class="chip">Ultimate Gamers League 2025 | The Esports Revolution</div>
+      <p class="small">
+        Contact:
+        <a href="tel:+917559366120" style="color:var(--muted);text-decoration:none;">+91 7559366120</a> |
+        <a href="tel:+917756997453" style="color:var(--muted);text-decoration:none;">+91 7756997453</a> |
+        <a href="tel:+918483938388" style="color:var(--muted);text-decoration:none;">+91 8483938388</a>
+      </p>
+    </footer>
+  </div>
 
-  <script>
-  // --- Utility Functions ---
-  function updateModeChip(mode) {
-    const chip = document.getElementById('modeChip');
-    if (!chip) return;
-    chip.textContent = 'MODE: ' + mode.toUpperCase();
-    chip.style.background = mode === 'Online' ? 'rgba(0,230,255,0.12)' : 'rgba(127,0,255,0.12)';
-    chip.style.color = mode === 'Online' ? 'var(--cyan)' : 'var(--accent)';
-  }
+  <script>
+  // --- Utility Functions ---
+  function updateModeChip(mode) {
+    const chip = document.getElementById('modeChip');
+    if (!chip) return;
+    chip.textContent = 'MODE: ' + mode.toUpperCase();
+    chip.style.background = mode === 'Online' ? 'rgba(0,230,255,0.12)' : 'rgba(127,0,255,0.12)';
+    chip.style.color = mode === 'Online' ? 'var(--cyan)' : 'var(--accent)';
+  }
 
-  function openModal(title, message) {
-    document.getElementById('modalTitle').textContent = title || '';
-    document.getElementById('modalMessage').textContent = message || '';
-    document.getElementById('customModal').style.display = 'flex';
-  }
+  function openModal(title, message) {
+    document.getElementById('modalTitle').textContent = title || '';
+    document.getElementById('modalMessage').textContent = message || '';
+    document.getElementById('customModal').style.display = 'flex';
+  }
 
-  function closeModal() {
-    document.getElementById('customModal').style.display = 'none';
-  }
+  function closeModal() {
+    document.getElementById('customModal').style.display = 'none';
+  }
 
-  function showLoading(show) {
-    document.getElementById('loadingOverlay').style.display = show ? 'flex' : 'none';
-  }
+  function showLoading(show) {
+    document.getElementById('loadingOverlay').style.display = show ? 'flex' : 'none';
+  }
 
-  function addRowToTable(row) {
-    const tbody = document.querySelector('#regTable tbody');
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td>${row.team || '-'}</td>
-      <td>${row.mode || '-'}</td>
-      <td>${row.game || '-'}</td>
-      <td>${row.category || '-'}</td>
-      <td>${row.members || '-'}</td>
-      <td>${row.slot || '-'}</td>
-    `;
-    tbody.appendChild(tr);
-  }
+  function addRowToTable(row) {
+    const tbody = document.querySelector('#regTable tbody');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${row.team || '-'}</td>
+      <td>${row.mode || '-'}</td>
+      <td>${row.game || '-'}</td>
+      <td>${row.category || '-'}</td>
+      <td>${row.members || '-'}</td>
+      <td>${row.slot || '-'}</td>
+    `;
+    tbody.appendChild(tr);
+  }
 
-  // --- Main Init ---
-  function initApp() {
-    // Generate or load user ID
-    const userIdEl = document.getElementById('userIdDisplay');
-    const uid = localStorage.getItem('ugl_user_id') || ('UGL-' + Math.random().toString(36).slice(2, 8).toUpperCase());
-    localStorage.setItem('ugl_user_id', uid);
-    if (userIdEl) userIdEl.textContent = 'User ID: ' + uid;
+  // --- Main Init ---
+  function initApp() {
+    // Generate or load user ID
+    const userIdEl = document.getElementById('userIdDisplay');
+    const uid = localStorage.getItem('ugl_user_id') || ('UGL-' + Math.random().toString(36).slice(2, 8).toUpperCase());
+    localStorage.setItem('ugl_user_id', uid);
+    if (userIdEl) userIdEl.textContent = 'User ID: ' + uid;
 
-    // Load saved registrations
-    const statusEl = document.getElementById('liveTableStatus');
-    const regs = JSON.parse(localStorage.getItem('ugl_regs') || '[]');
-    regs.forEach(addRowToTable);
-    statusEl.textContent = regs.length ? `Showing ${regs.length} registrations.` : 'No registrations yet.';
+    // Load saved registrations
+    const statusEl = document.getElementById('liveTableStatus');
+    const regs = JSON.parse(localStorage.getItem('ugl_regs') || '[]');
+    regs.forEach(addRowToTable);
+    statusEl.textContent = regs.length ? `Showing ${regs.length} registrations.` : 'No registrations yet.';
 
-    // --- Registration Form ---
-    const form = document.getElementById('regForm');
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
+    // --- Registration Form ---
+    const form = document.getElementById('regForm');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
 
-        const team = document.getElementById('teamName').value.trim();
-        const mode = document.getElementById('modeSelect').value;
-        const game = document.getElementById('gameSelect').value;
-        const category = document.getElementById('categorySelect').value;
-        const phone = document.getElementById('phone').value.trim();
-        const members = document.getElementById('members').value.trim();
+        const team = document.getElementById('teamName').value.trim();
+        const mode = document.getElementById('modeSelect').value;
+        const game = document.getElementById('gameSelect').value;
+        const category = document.getElementById('categorySelect').value;
+        const phone = document.getElementById('phone').value.trim();
+          const referral = document.getElementById('referral').value.trim(); // Get new referral value
+        const members = document.getElementById('members').value.trim();
 
-        if (!team || !mode || !game || !category || !phone) {
-          openModal('Incomplete form', 'Please fill all required fields.');
-          return;
-        }
+        if (!team || !mode || !game || !category || !phone) {
+          openModal('Incomplete form', 'Please fill all required fields.');
+          return;
+        }
 
-        showLoading(true);
+        showLoading(true);
 
-        // Assign slot ID
-        const slotId = (game.slice(0,2) + '-' + category.slice(0,2) + '-' + Math.floor(Math.random()*900 + 100)).toUpperCase();
+        // Assign slot ID
+        const slotId = (game.slice(0,2) + '-' + category.slice(0,2) + '-' + Math.floor(Math.random()*900 + 100)).toUpperCase();
 
-        const newReg = { team, mode, game, category, members: members || team, slot: slotId };
-        const list = JSON.parse(localStorage.getItem('ugl_regs') || '[]');
-        list.push(newReg);
-        localStorage.setItem('ugl_regs', JSON.stringify(list));
-        addRowToTable(newReg);
+        const newReg = { team, mode, game, category, members: members || team, slot: slotId };
+        const list = JSON.parse(localStorage.getItem('ugl_regs') || '[]');
+        list.push(newReg);
+        localStorage.setItem('ugl_regs', JSON.stringify(list));
+        addRowToTable(newReg);
 
-        // WhatsApp message
-        const msg = encodeURIComponent(
-          `UGL 2025 Registration:\n` +
-          `Team/Player: ${team}\nMode: ${mode}\nGame: ${game}\nCategory: ${category}\nMembers: ${members || team}\nAssigned Slot ID: ${slotId}\n\nContact: ${phone}\n— Sent via UGL Quick Registration\n\nNote: Kindly meet and complete fee payment. Your slot is temporary until payment confirmation.`
-        );
-        const waNumber = '917559366120';
-        const waUrl = `https://wa.me/${waNumber}?text=${msg}`;
+        // WhatsApp message
+        const msg = encodeURIComponent(
+          `UGL 2025 Registration:\n` +
+          `Team/Player: ${team}\nMode: ${mode}\nGame: ${game}\nCategory: ${category}\nMembers: ${members || team}\nAssigned Slot ID: ${slotId}\nReferral: ${referral || 'N/A'}\n\nContact: ${phone}\n— Sent via UGL Quick Registration\n\nNote: Kindly meet and complete fee payment. Your slot is temporary until payment confirmation.`
+        );
+        const waNumber = '917559366120';
+        const waUrl = `https://wa.me/${waNumber}?text=${msg}`;
 
-        setTimeout(() => {
-          showLoading(false);
-          openModal('Registration saved', 'Your slot has been assigned. Click OK to continue to WhatsApp.');
-        }, 600);
+        setTimeout(() => {
+          showLoading(false);
+          openModal('Registration saved', 'Your slot has been assigned. Click OK to continue to WhatsApp.');
+        }, 600);
 
-        const originalClose = closeModal;
-        closeModal = function() {
-          document.getElementById('customModal').style.display = 'none';
-          window.open(waUrl, '_blank');
-          closeModal = originalClose;
-        };
+        const originalClose = closeModal;
+        closeModal = function() {
+          document.getElementById('customModal').style.display = 'none';
+          window.open(waUrl, '_blank');
+          closeModal = originalClose;
+        };
 
-        document.getElementById('regMsg').textContent = `Assigned Slot: ${slotId} • Ready to send via WhatsApp`;
-      });
-    }
+        document.getElementById('regMsg').textContent = `Assigned Slot: ${slotId} • Ready to send via WhatsApp`;
+      });
+    }
 
-    // --- Partner Form ---
-    const partnerForm = document.getElementById('partnerForm');
-    if (partnerForm) {
-      partnerForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+    // --- Partner Form ---
+    const partnerForm = document.getElementById('partnerForm');
+    if (partnerForm) {
+      partnerForm.addEventListener('submit', function(e) {
+        e.preventDefault();
 
-        const name = document.getElementById('partnerName').value.trim();
-        const phone = document.getElementById('partnerPhone').value.trim();
-        const email = document.getElementById('partnerEmail').value.trim();
+        const name = document.getElementById('partnerName').value.trim();
+        const phone = document.getElementById('partnerPhone').value.trim();
+        const email = document.getElementById('partnerEmail').value.trim();
 
-        if (!name || !phone || !email) {
-          openModal('Incomplete form', 'Please fill all required fields.');
-          return;
-        }
+        if (!name || !phone || !email) {
+          openModal('Incomplete form', 'Please fill all required fields.');
+          return;
+        }
 
-        const msg = encodeURIComponent(
-          `UGL 2025 Partner Registration:\nName/Org: ${name}\nWhatsApp: ${phone}\nEmail: ${email}\n\nNote: Kindly meet and complete fee/payment agreements. Partner slots are temporary until confirmation.`
-        );
-        const waNumber = '917559366120';
-        const waUrl = `https://wa.me/${waNumber}?text=${msg}`;
+        const msg = encodeURIComponent(
+          `UGL 2025 Partner Registration:\nName/Org: ${name}\nWhatsApp: ${phone}\nEmail: ${email}\n\nNote: Kindly meet and complete fee/payment agreements. Partner slots are temporary until confirmation.`
+        );
+        const waNumber = '917559366120';
+        const waUrl = `https://wa.me/${waNumber}?text=${msg}`;
 
-        openModal('Partner Registration Saved', 'Click OK to continue to WhatsApp.');
-        const originalClose = closeModal;
-        closeModal = function() {
-          document.getElementById('customModal').style.display = 'none';
-          window.open(waUrl, '_blank');
-          closeModal = originalClose;
-        };
+        openModal('Partner Registration Saved', 'Click OK to continue to WhatsApp.');
+        const originalClose = closeModal;
+        closeModal = function() {
+          document.getElementById('customModal').style.display = 'none';
+          window.open(waUrl, '_blank');
+          closeModal = originalClose;
+        };
 
-        document.getElementById('partnerMsg').textContent = 'Partner request saved. Ready to send via WhatsApp.';
-      });
-    }
-  }
+        document.getElementById('partnerMsg').textContent = 'Partner request saved. Ready to send via WhatsApp.';
+      });
+    }
+  }
 </script>
 
 </body>
