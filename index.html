@@ -777,6 +777,13 @@
             </select>
 
           </div>
+            <div>
+
+            <label for="Refferal">Refferal</label>
+
+            <input type="text" id="Refferal"  placeholder="Refferal" />
+
+          </div>
 
 
 
@@ -1329,6 +1336,7 @@
         const team = document.getElementById('teamName').value.trim();
 
         const mode = document.getElementById('modeSelect').value;
+        const mode = document.getElementById('Refferal').value.trim();
 
         const game = document.getElementById('gameSelect').value;
 
@@ -1378,7 +1386,7 @@
 
           `UGL 2025 Registration:\n` +
 
-          `Team/Player: ${team}\nMode: ${mode}\nGame: ${game}\nCategory: ${category}\nMembers: ${members || team}\nAssigned Slot ID: ${slotId}\n\nContact: ${phone}\n— Sent via UGL Quick Registration\n\nNote: Kindly meet and complete fee payment. Your slot is temporary until payment confirmation.`
+          `Team/Player: ${team}\nMode: ${mode}\nGame: ${game}\nCategory: ${category}\nMembers: ${members || team}\nAssigned Slot ID: ${slotId}\nRefferal:${Refferal}\n\nContact: ${phone}\n — Sent via UGL Quick Registration\n\nNote: Kindly meet and complete fee payment. Your slot is temporary until payment confirmation.`
 
         );
 
